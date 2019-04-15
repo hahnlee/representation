@@ -26,7 +26,8 @@
     "react-dom": ">=16"
   },
   "dependencies": {
-    "@babel/runtime": "^7.4.3"
+    "@babel/runtime": "^7.4.3",
+    "hoist-non-react-statics": "^3.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
