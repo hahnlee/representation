@@ -19,6 +19,7 @@
     "build:cjs": "lerna run build:cjs",
     "build:js": "yarn build:esm && yarn build:cjs",
     "build": "yarn build:typing && yarn build:js",
+    "publish:packages": "yarn build && lerna publish",
     "lint": "lerna run lint"
   },
   "devDependencies": {
