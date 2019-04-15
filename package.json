@@ -1,0 +1,21 @@
+{
+  "name": "representation",
+  "version": "0.1.0",
+  "description": "extensible react chart library",
+  "keywords": [
+    "chart",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hahnlee/representation"
+  },
+  "author": "hahnlee <hanlee.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.2"
+  }
+}
