@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+
+.step {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    text-align: center;
+    background: $white;
+    box-shadow: 0 2px 6px 0 $black-01;
+    border-radius: .25rem;
+    border: 1px solid $black-02;
+    overflow: hidden;
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: .75rem;
+      background: $arrow-gray;
+
+      > i {
+        font-size: 1.25rem;
+      }
+    }
+
+    .rate {
+      display: flex;
+      align-items: center;
+      font-size: 1.25rem;
+      padding: 0 1rem;
+    }
+  }
+}
