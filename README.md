@@ -120,6 +120,34 @@ function Step({ chart, fromDataKey, toDataKey, width, onClick }) {
 
 export default withChart(Step)
 ```
+
+Now you can use custom children!
+```jsx
+import React from 'react'
+import { BarChart, Bar } from '@representation/bar'
+import { XAxis, YAxis } from '@representation/axis'
+
+// Your custom children
+import Step from 'Component/Step'
+
+function Chart() {
+  return (
+    <BarChart
+      data={{ a: 400, b: 300, c: 100 }}
+      width={1000}
+      height={300}
+    >
+      <Bar dataKey="a" fill="#00c3ff" />
+      <Step fromDataKey="a" toDataKey="b" width={200} />
+      <Bar dataKey="b" fill="rgba(0, 138, 255, 0.8)" />
+      <Step fromDataKey="b" toDataKey="c" width={200} />
+      <Bar dataKey="c" fill="#4f5bff" />
+      <YAxis stroke="#ccc" />
+      <XAxis stroke="#ccc" />
+    </BarChart>
+  )
+}
+```
 Result:
 ![bar-chart-with-step](./assets/bar-chart-with-step.png)
 
