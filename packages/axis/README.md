@@ -1,7 +1,7 @@
 # @representation/axis
 Axis chart component of representation the react chart library
 
-# Install
+# Installation
 ```
 npm install --save @representation/axis
 ```

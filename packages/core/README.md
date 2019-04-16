@@ -1,7 +1,7 @@
 # @representation/core
 core part of representation the react chart library
 
-# Install
+# Installation
 ```
 npm install --save @representation/core
 ```
