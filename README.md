@@ -90,14 +90,14 @@ function Step({ chart, fromDataKey, toDataKey, width, onClick }) {
   const toData = chart.data[toDataKey]
   const rate = toData / fromData
 
-  const height = 100
+  const stepHeight = 100
 
   return (
     <foreignObject
-      x={(xPosition + height / 2) - (width / 2)}
-      y={(chart.height / 2) - (height / 2)}
+      x={xPosition}
+      y={(chart.height / 2) - (stepHeight / 2)}
       width={width}
-      height={height}
+      height={stepHeight}
     >
       <div
         className={styles.step}
